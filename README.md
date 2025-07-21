@@ -7,27 +7,6 @@ It automatically detects file types, counts lines of code, identifies programmin
 
 ---
 
-## 📂 Project Structure
-
-
-```text
-CodeScope/
-├── frontend/
-│   ├── public/
-│   └── src/
-│       ├── App.jsx
-│       ├── components/
-│       └── index.css
-├── backend/
-│   ├── main.py
-│   ├── utils.py
-├── requirements.txt
-└── README.md
-```
-
-
----
-
 ## 🚀 Features
 
 - 📁 Recursive folder upload with file type detection
@@ -45,18 +24,38 @@ CodeScope/
 - 🌙 Dark/Light Mode toggle
 - ⚙️ Fully offline — no internet or server dependency required after setup
 
+
 ---
 
 ## 🛠 Tech Stack
 
 | Layer     | Tech                    |
 |-----------|-------------------------|
-| Frontend  | React (Vite), Tailwind CSS |
-| Backend   | FastAPI, Python         |
-| Syntax Highlighting | Prism.js   |
-| Parsing   | Custom code analysis utils (Python) |
-| Other     | Git, HTML/CSS/JS, Google Colab |
+| Frontend  | React (Vite) |
+| Backend   | FastAPI, Python |
+| Syntax Highlighting | Prism.js  |
+| Parsing   |  Custom code analysis utils (Python AST + regex) |
+| Other     |  Git, HTML, CSS, JavaScript, Google Colab |
 
+---
+
+## 📂 Project Structure
+
+
+```text
+CodeScope/
+├── frontend/
+│   ├── public/
+│   └── src/
+│       ├── App.jsx
+│       ├── components/
+│       └── index.css
+├── backend/
+│   ├── main.py
+│   ├── utils.py
+├── requirements.txt
+└── README.md
+```
 ---
 
 ## 🧪 Getting Started
