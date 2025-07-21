@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: monospace;
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 25%;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-right: 1px solid #333;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #ab7df6;
+}
+
+.upload {
+  margin-bottom: 20px;
+  display: block;
+  font-size: 14px;
+}
+
+.upload input {
+  margin-top: 8px;
+  background-color: #2b2b2b;
+  border: 1px solid #444;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.viewer {
+  width: 75%;
+  padding: 30px;
+  background-color: #181818;
+  overflow-y: auto;
+}
+
+.file-box {
+  background-color: #222;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.file-box:hover {
+  box-shadow: 0 0 12px rgba(171, 125, 246, 0.4);
+}
+
+.file-box h2 {
+  color: #79b8ff;
+  margin-bottom: 6px;
+}
+
+.meta {
+  color: #aaa;
+}
+
+.symbol-heading {
+  font-weight: bold;
+  color: #ffda6b;
+  margin-top: 16px;
+}
+
+.symbol-item {
+  cursor: pointer;
+  padding: 4px 0;
+  color: #88f;
+  font-size: 0.95rem;
+}
+
+.symbol-item:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.highlight-symbol {
+  background-color: #5e5e5e66;
+  transition: background-color 0.5s;
+}
+
+
+
+/* LIGHT MODE */
+.app-container.light {
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+.app-container.light .sidebar {
+  background-color: #f0f0f0;
+  color: #111;
+  border-right: 1px solid #ccc;
+}
+
+.app-container.light .viewer {
+  background-color: #ffffff;
+}
+
+.app-container.light .file-box {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+}
+
+.app-container.light .file-box h2 {
+  color: #333;
+}
+
+.app-container.light .meta {
+  color: #666;
+}
+
+/* DARK MODE remains same */
+.app-container.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.app-container.dark .sidebar {
+  background-color: #1e1e1e;
+}
+
+.app-container.dark .viewer {
+  background-color: #181818;
+}
+
+.app-container.dark .file-box {
+  background-color: #222;
+  border: 1px solid #333;
+}
+
+
