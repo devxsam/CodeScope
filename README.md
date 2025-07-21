@@ -3,7 +3,7 @@
 > **Offline Codebase Analyzer with Symbol Explorer and Visual Dashboard**
 
 CodeScope is a lightweight offline tool that lets you explore and analyze your codebase visually — no cloud, no clutter.  
-It detects file types, counts lines of code, identifies programming languages, and provides a symbol navigator and dashboard, all in a clean frontend.
+It automatically detects file types, counts lines of code, identifies programming languages, and provides a symbol navigator and dashboard, all in a clean frontend.
 
 ---
 
@@ -20,7 +20,6 @@ CodeScope/
 │       └── index.css
 ├── backend/
 │   ├── main.py
-│   ├── analyzer.py
 │   ├── utils.py
 ├── requirements.txt
 └── README.md
@@ -31,14 +30,20 @@ CodeScope/
 
 ## 🚀 Features
 
-- 📁 Recursive folder scan with file type detection
+- 📁 Recursive folder upload with file type detection
 - 📊 Dashboard panel with:
-  - Total files, lines of code, and language breakdown
-  - Visual pie/bar charts
-- 🧠 Symbol explorer (functions, classes, variables)
-- 🔍 Search and filter across file tree
-- 🌙 Dark/light mode toggle
-- ⚙️ Built to work **fully offline**
+  - Total files and total lines of code
+  - Language-wise file count
+  - Top 5 largest files
+  - Class/function counts for Python files
+- 🧠 Symbol Explorer:
+  - Detects **functions and classes** (Python, JS, Java, C++, etc.)
+  - Click to jump to symbol in the code viewer
+- 🧾 Code Viewer:
+  - Shows file content with syntax highlighting (using Prism.js)
+  - Auto-scroll and anchor links for symbols
+- 🌙 Dark/Light Mode toggle
+- ⚙️ Fully offline — no internet or server dependency required after setup
 
 ---
 
@@ -48,7 +53,7 @@ CodeScope/
 |-----------|-------------------------|
 | Frontend  | React (Vite), Tailwind CSS |
 | Backend   | FastAPI, Python         |
-| Charts    | Recharts.js             |
+| Syntax Highlighting | Prism.js   |
 | Parsing   | Custom code analysis utils (Python) |
 | Other     | Git, HTML/CSS/JS, Google Colab |
 
@@ -80,6 +85,10 @@ cd frontend
 npm install
 npm run dev
 ```
+---
+
+🛠️ Upcoming: ZIP upload support, variable scopes, pie charts, live widgets, and AI assistant.
+
 ---
 
 ⚠️ Disclaimer
